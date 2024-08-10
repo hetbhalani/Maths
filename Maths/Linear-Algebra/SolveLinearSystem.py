@@ -16,6 +16,9 @@ plt.axvline(x = 2, color='purple',linestyle='--')
 plt.axhline(y = 6, color='purple',linestyle='--')
 
 
+# y1 = -5 + (2*x)/3
+# y2 = (7-2*x)/5
+
 # fig, ax = plt.subplots()
 # plt.xlabel('x')
 # plt.ylabel('y')
