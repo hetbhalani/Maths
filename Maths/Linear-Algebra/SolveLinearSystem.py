@@ -15,4 +15,20 @@ ax.plot(x, y2, c='red')
 plt.axvline(x = 2, color='purple',linestyle='--')
 plt.axhline(y = 6, color='purple',linestyle='--')
 
+
+# fig, ax = plt.subplots()
+# plt.xlabel('x')
+# plt.ylabel('y')
+
+# # Add x and y axes:
+# plt.axvline(x=0, color='lightgray')
+# plt.axhline(y=0, color='lightgray')
+
+# ax.set_xlim([-2, 10])
+# ax.set_ylim([-6, 4])
+# ax.plot(x, y1, c='green')
+# ax.plot(x, y2, c='brown')
+# plt.axvline(x=6, color='purple', linestyle='--')
+# _ = plt.axhline(y=-1, color='purple', linestyle='--')
+
 plt.show()
