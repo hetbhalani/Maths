@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 v = np.array([3, 1])
+y = np.array([2,3])
 
 def plot_vectors(vectors, colors):
     plt.figure()
@@ -16,4 +17,4 @@ def plot_vectors(vectors, colors):
     plt.ylim(-1, 2)
     plt.show()
 
-plot_vectors([v], ['lightblue'])
+plot_vectors([v,y], ['lightblue','blue'])
