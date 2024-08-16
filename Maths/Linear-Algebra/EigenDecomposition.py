@@ -19,16 +19,15 @@ def plot_vectors(vectors, colors):
                    angles='xy', scale_units='xy', scale=1, color=colors[i])
     plt.xlim(-5, 5)
     plt.ylim(-1, 2)
-    plt.show()
 
 # plot_vectors([v,ans], ['lightblue','blue'])
 
 # print(np.matrix(v).T)
 
-a = [1,2]
-b = [3,4]
-c = [5,6]
-d = [7,8]
+a = np.array([1,2])
+b = np.array([-3,4])
+c = np.array([5,-6])
+d = np.array([-6,-5])
 
 # V = np.concatenate((np.matrix(a),
 #                    np.matrix(b),
@@ -46,3 +45,9 @@ V = np.concatenate((np.matrix(a).T,
                    axis=1)
 
 print(V)
+
+plot_vectors([a, b, c, d,v], ['red', 'green', 'blue', 'yellow','orange'])
+plt.xlim(-7, 6)
+plt.ylim(-8, 8)
+plt.show()
+plt.show()
