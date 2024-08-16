@@ -4,8 +4,9 @@ import numpy as np
 v = np.array([3, 1])
 # E = np.array([[1,0],[0,-1]])
 # ans = np.dot(E,v) #same as v*E
-F = np.array([[-1,0],[0,1]])
-ans = np.dot(v,F)
+
+# F = np.array([[-1,0],[0,1]])
+# ans = np.dot(v,F) # same as F*v
 
 def plot_vectors(vectors, colors):
     plt.figure()
@@ -20,4 +21,28 @@ def plot_vectors(vectors, colors):
     plt.ylim(-1, 2)
     plt.show()
 
-plot_vectors([v,ans], ['lightblue','blue'])
+# plot_vectors([v,ans], ['lightblue','blue'])
+
+# print(np.matrix(v).T)
+
+a = [1,2]
+b = [3,4]
+c = [5,6]
+d = [7,8]
+
+# V = np.concatenate((np.matrix(a),
+#                    np.matrix(b),
+#                    np.matrix(c),
+#                    np.matrix(d)),
+#                    axis=1)
+
+
+#jo transpose kariye to row column vice concate thai...
+
+V = np.concatenate((np.matrix(a).T,
+                   np.matrix(b).T,
+                   np.matrix(c).T,
+                   np.matrix(d).T),
+                   axis=1)
+
+print(V)
