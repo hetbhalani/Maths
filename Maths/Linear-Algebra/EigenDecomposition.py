@@ -47,7 +47,7 @@ V = np.concatenate((np.matrix(a).T,
 print(V)
 
 plot_vectors([a, b, c, d,v], ['red', 'green', 'blue', 'yellow','orange'])
-plt.xlim(-7, 6)
-plt.ylim(-8, 8)
+plt.xlim(-8, 6)
+plt.ylim(-8, 9)
 plt.show()
 plt.show()
