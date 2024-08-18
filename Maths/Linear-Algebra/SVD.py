@@ -18,7 +18,9 @@ plt.imshow(imgmat, cmap='gray')
 
 U ,sigma, V = np.linalg.svd(imgmat)
 
-reconstrcted = np.matrix(U[:, :1]) * np.diag(sigma[:1]) * np.matrix(V[:1, :])
-plt.imshow(reconstrcted, cmap="gray")
-
-plt.show()
+for i in [2, 4, 8, 16, 32, 64]:
+    reconstimg = np.matrix(U[:, :i]) * np.diag(sigma[:i]) * np.matrix(V[:i, :])
+    plt.imshow(reconstimg, cmap='gray')
+    title = "n = %s" % i
+    plt.title(title)
+    plt.show()
