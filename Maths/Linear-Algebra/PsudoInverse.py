@@ -15,3 +15,13 @@ plt.ylabel(ylabel)
 ax.scatter(x1, y)
 
 plt.show()
+
+x0 = np.ones(8)
+
+X = np.concatenate((np.matrix(x0).T, np.matrix(x1).T), axis=1)
+
+print(np.dot(np.linalg.pinv(X),y))
+
+# first one is y-intercept of line
+# second is slope of line (m)
+
