@@ -18,9 +18,14 @@ plt.imshow(imgmat, cmap='gray')
 
 U ,sigma, V = np.linalg.svd(imgmat)
 
-for i in [2, 4, 8, 16, 32, 64]:
-    reconstimg = np.matrix(U[:, :i]) * np.diag(sigma[:i]) * np.matrix(V[:i, :])
-    plt.imshow(reconstimg, cmap='gray')
-    title = "n = %s" % i
-    plt.title(title)
-    plt.show()
+i = 64 #how much img will be compressed
+reconstimg = np.matrix(U[:, :i]) * np.diag(sigma[:i]) * np.matrix(V[:i, :])
+plt.imshow(reconstimg, cmap='gray')
+title = "n = %s" % i
+plt.title(title)
+plt.show()
+    
+width , height = img.size
+print(f"original resolution: {height} X {width} = {height*width}")
+print(f"compression resolution: {height*i} + {i} + {width*i} = {(height*i)+(i)+(width*i)}")
+print(f"total reduction = {(100*((height*i)+(i)+(width*i)))/(height*width)}%")
