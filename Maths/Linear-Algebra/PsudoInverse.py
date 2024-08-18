@@ -24,4 +24,3 @@ print(np.dot(np.linalg.pinv(X),y))
 
 # first one is y-intercept of line
 # second is slope of line (m)
-
