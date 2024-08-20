@@ -19,6 +19,7 @@ plt.scatter(X[:, 0], X[:, 1])
 unique_elements, counts_elements = np.unique(iris.target, return_counts=True)
 np.asarray((unique_elements, counts_elements))
 
+# these are 3 ful (flowers)
 list(iris.target_names)
 _ = plt.scatter(X[:, 0], X[:, 1], c=iris.target)
 plt.show()
