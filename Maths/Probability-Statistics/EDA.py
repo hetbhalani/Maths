@@ -1,4 +1,4 @@
-# Explorartry Data Enalysis
+# Explorartry Data Analysis
 
 import pandas as pd
 import seaborn as sns
