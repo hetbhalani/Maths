@@ -15,7 +15,7 @@ iris.head()
 
 iris.plot(kind='scatter', x='sepal.length', y='sepal.width')
 
-sns.set_style("whitegrid") #next line ma dot vadu function use karvu hoi tyare \ lagvi devanu
+sns.set_style("whitegrid") # next line ma dot vadu function use karvu hoi tyare \ lagvi devanu
 sns.FacetGrid(iris, hue='variety') \
     .map(plt.scatter,'sepal.length', 'sepal.width') \
     .add_legend()
