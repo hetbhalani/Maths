@@ -12,6 +12,7 @@ iris_versicolor = iris.loc[iris['variety'] == "Versicolor"]
 # use "mean" for Mean and use "std" for standers deviation in NumPy
 print("Means = ")
 print(np.mean(iris_setosa['petal.length']))
+print(np.mean(np.append(iris_setosa['petal.length'],50)))
 print(np.mean(iris_virginica['petal.length']))
 print(np.mean(iris_versicolor['petal.length']))
 
@@ -19,6 +20,3 @@ print("Std-Dev = ")
 print(np.std(iris_setosa['petal.length']))
 print(np.std(iris_virginica['petal.length']))
 print(np.std(iris_versicolor['petal.length']))
-
-plt.plot(np.mean(iris_setosa['petal.length']))
-plt.show()
