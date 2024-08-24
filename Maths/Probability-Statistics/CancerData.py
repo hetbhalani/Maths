@@ -23,6 +23,18 @@ df.head()
 # print(df.describe())
 # print(df)
 
+sns.FacetGrid(df,hue='survival_status', height=5).map(sns.distplot, 'aln').add_legend()
 plt.grid(True)
-sns.FacetGrid(df,hue='survival_status', height=5).map(sns.distplot, 'age').add_legend()
+plt.show()
+
+# find CDF
+
+count1, edge1 = np.histogram(status_yes['aln'], bins=10, density=True)
+pdf1 = count1 / (sum(count1))
+print(pdf1)
+print(edge1)
+cdf1 = np.cumsum(pdf1)
+plt.plot(edge1[1:], pdf1)
+plt.plot(edge1[1:], cdf1, label = 'yes')
+plt.xlabel('nodes')
 plt.show()
