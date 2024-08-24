@@ -51,3 +51,13 @@ plt.xlabel('nodes')
 plt.legend()
 plt.show()
 
+# box plot
+
+# sns.boxplot(x='survival_status', y='age', data=df)
+# plt.show()
+# sns.boxplot(x='survival_status', y='operation_year', data=df)
+# plt.show()
+# sns.boxplot(x='survival_status', y='aln', data=df)
+# plt.show()
+
+
