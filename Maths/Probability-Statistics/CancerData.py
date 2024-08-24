@@ -62,6 +62,13 @@ plt.show()
 
 
 # pair plot
-sns.set_style('whitegrid')
-sns.pairplot(df,hue='survival_status', height=5)
+
+# sns.set_style('whitegrid')
+# sns.pairplot(df,hue='survival_status', height=5)
+# plt.show()
+
+
+#multivariate analysis 
+
+sns.jointplot(x='operation_year', y='age', data=df, kind='kde', cmap='viridis', fill=True)
 plt.show()
