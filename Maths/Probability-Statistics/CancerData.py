@@ -61,3 +61,7 @@ plt.show()
 # plt.show()
 
 
+# pair plot
+sns.set_style('whitegrid')
+sns.pairplot(df,hue='survival_status', height=5)
+plt.show()
