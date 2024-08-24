@@ -37,4 +37,17 @@ cdf1 = np.cumsum(pdf1)
 plt.plot(edge1[1:], pdf1)
 plt.plot(edge1[1:], cdf1, label = 'yes')
 plt.xlabel('nodes')
+
+print("-------------------------------------------------------------------")
+
+count2, edge2 = np.histogram(status_no['aln'], bins=10, density=True)
+pdf2 = count2 / (sum(count2))
+print(pdf2)
+print(edge2)
+cdf2 = np.cumsum(pdf2)
+plt.plot(edge2[1:], pdf2)
+plt.plot(edge2[1:], cdf2, label = 'no')
+plt.xlabel('nodes')
+plt.legend()
 plt.show()
+
