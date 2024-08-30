@@ -10,6 +10,9 @@ fig, ax = plt.subplots()
 ax.plot(x,y)
 
 #now shrink the limits for straigth line
-
+fig, ax = plt.subplots()
+ax.set_xlim([-1.01, -0.99])
+ax.set_ylim([0.99, 1.01])
+ax.plot(x,y)
 
 plt.show()
