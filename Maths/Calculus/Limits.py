@@ -28,7 +28,7 @@ def my_fun (x_fun):
 
 print(my_fun(1.0001)) #2.0000999999993923
 
-print(my_fun(0.99999999999999)) #2
+print(my_fun(0.999999999)) #2
 
 y = my_fun(x)
 
