@@ -20,16 +20,25 @@ ax.plot(x,y)
 
 def my_fun (x_fun):
     y_fun = (x_fun**2 - 1)/(x_fun - 1)
-    print(y_fun)
+    return y_fun
 
 
-# my_fun(1)
+# print(my_fun(1))
 # error
 
-my_fun(1.0001) #2.0000999999993923
+print(my_fun(1.0001)) #2.0000999999993923
 
-my_fun(0.99999999999999) #2
+print(my_fun(0.99999999999999)) #2
 
 y = my_fun(x)
 
-# plt.show()
+fig, ax = plt.subplots()
+plt.axvline(x=0, color='lightgray')
+plt.axhline(y=0, color='lightgray')
+plt.xlim(-1, 5)
+plt.ylim(-1, 5)
+plt.axvline(x=1, color='purple', linestyle='--')
+plt.axhline(y=2, color='purple', linestyle='--')
+ax.plot(x,y)
+
+plt.show()
