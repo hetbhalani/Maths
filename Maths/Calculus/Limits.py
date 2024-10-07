@@ -15,4 +15,21 @@ plt.axvline(x=5, color='purple', linestyle='--')
 plt.axhline(y=37, color='purple', linestyle='--')
 ax.plot(x,y)
 
-plt.show()
+# lim  (x2−1)/(x−1)
+# x→1
+
+def my_fun (x_fun):
+    y_fun = (x_fun**2 - 1)/(x_fun - 1)
+    print(y_fun)
+
+
+# my_fun(1)
+# error
+
+my_fun(1.0001) #2.0000999999993923
+
+my_fun(0.99999999999999) #2
+
+y = my_fun(x)
+
+# plt.show()
