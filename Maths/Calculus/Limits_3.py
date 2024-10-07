@@ -26,6 +26,7 @@ ax.plot(x, y)
 
 left_x = x[x<0]
 right_x = x[x>0]
+# to separate two halfs
 
 left_y = inf_fxn(left_x)
 right_y = inf_fxn(right_x)
