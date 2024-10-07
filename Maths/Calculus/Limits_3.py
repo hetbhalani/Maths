@@ -17,3 +17,11 @@ print(inf_fxn(1e6)) #2.5e-05
 
 y = inf_fxn(x)
 
+fig, ax = plt.subplots()
+plt.axvline(x=0, color='lightgray')
+plt.axhline(y=0, color='lightgray')
+plt.xlim(-10, 10)
+plt.ylim(-300, 300)
+ax.plot(x, y)
+
+plt.show()
