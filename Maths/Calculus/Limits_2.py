@@ -20,3 +20,13 @@ print(sin_fxn(0.0000000001)) # 1
 
 y = sin_fxn(x)
 
+fig, ax = plt.subplots()
+plt.axvline(x=0, color='lightgray')
+plt.axhline(y=0, color='lightgray')
+plt.xlim(-10, 10)
+plt.ylim(-1, 2)
+plt.axvline(x=0, color='purple', linestyle='--')
+plt.axhline(y=1, color='purple', linestyle='--')
+ax.plot(x,y)
+
+plt.show()
