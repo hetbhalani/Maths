@@ -15,6 +15,14 @@ print(f(2))
 print(f(5))
 # ans is 37 
 
+m = (37-10)/(5-2)
+print(m) #9
+
+b = 37 - m*5
+print(b)
+
+line_y = m*x +b
+
 fig, ax = plt.subplots()
 plt.axvline(x=0, color='lightgray')
 plt.axhline(y=0, color='lightgray')
@@ -22,13 +30,7 @@ plt.scatter(2,10) #point k jena pr aapde slope joto 6
 plt.scatter(5,37, c='orange', zorder=3) # ek bijo point lidho k jena relative aapde slope joye 6
 # zorder etle curve ni uper point aave
 plt.ylim(-5,150)
-
+plt.plot(x, line_y, c='orange')
 ax.plot(x,y)
-
-m = (37-10)/(5-2)
-print(m) #9
-
-b = 37 - m*5
-print(b)
 
 plt.show()
