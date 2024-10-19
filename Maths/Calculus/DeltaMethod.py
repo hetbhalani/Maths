@@ -34,3 +34,18 @@ plt.plot(x, line_y, c='orange')
 ax.plot(x,y)
 
 plt.show()
+
+#Example
+
+nx1 = -1
+ny1 = 1 #func. thi mle
+
+delta_x = 0.000001 #smallllllllllllll
+
+# x2 = x1 + delta_x
+
+nx2 = -0.999999
+ny2 = 1.000000000001 #func. thi mle
+
+m1 = (ny2-ny1)/(nx2-nx1)
+print(m)
