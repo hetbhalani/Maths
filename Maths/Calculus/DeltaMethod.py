@@ -67,7 +67,11 @@ plt.show()
 def diff_demo(my_f, my_x, my_delta):
     return (my_f(my_x + my_delta) - my_f(my_x))/ my_delta
 
-deltas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
+deltas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001] # delta become smalllllllllll
 
 for delta in deltas:
-    print(diff_demo(f,2,delta))
+    print(diff_demo(f,2,delta)) # for x = 2
+    
+for delta in deltas:
+    print(diff_demo(f, -1, delta)) # for x = -1
+    
