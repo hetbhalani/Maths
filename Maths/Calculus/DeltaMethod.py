@@ -50,8 +50,8 @@ ny2 = 1.000000000001 #func. thi mle
 m1 = (ny2-ny1)/(nx2-nx1)
 print(m)
 
-b = ny2-m*nx2
-nline_y = m*x+b
+b = ny2-m1*nx2
+nline_y = m1*x+b
 
 fig, ax = plt.subplots()
 plt.axvline(x=0, color='lightgray')
