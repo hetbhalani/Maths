@@ -63,3 +63,11 @@ plt.plot(x, nline_y, c='orange', zorder=3)
 ax.plot(x,y)
 
 plt.show()
+
+def diff_demo(my_f, my_x, my_delta):
+    return (my_f(my_x + my_delta) - my_f(my_x))/ my_delta
+
+deltas = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
+
+for delta in deltas:
+    print(diff_demo(f,2,delta))
