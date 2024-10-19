@@ -33,7 +33,7 @@ plt.ylim(-5,150)
 plt.plot(x, line_y, c='orange')
 ax.plot(x,y)
 
-plt.show()
+# plt.show()
 
 #Example
 
@@ -49,3 +49,17 @@ ny2 = 1.000000000001 #func. thi mle
 
 m1 = (ny2-ny1)/(nx2-nx1)
 print(m)
+
+b = ny2-m*nx2
+nline_y = m*x+b
+
+fig, ax = plt.subplots()
+plt.axvline(x=0, color='lightgray')
+plt.axhline(y=0, color='lightgray')
+plt.scatter(nx1, ny1)
+plt.scatter(nx2, ny2, c='orange', zorder=3)
+plt.ylim(-5, 150)
+plt.plot(x, nline_y, c='orange', zorder=3)
+ax.plot(x,y)
+
+plt.show()
